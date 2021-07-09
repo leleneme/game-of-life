@@ -79,9 +79,9 @@ void update(int width, int height, int universe[width][height]) {
             if (universe[x][y]) n--;
             new[x][y] = (n == 3 || (n == 2 && universe[x][y]));
         }
-	for (int x = 0; x < width; x++)
+    for (int x = 0; x < width; x++)
         for (int y = 0; y < height; y++)
-            universe[x][y] = new[x][y];
+        universe[x][y] = new[x][y];
 
     g_generation++;
 }

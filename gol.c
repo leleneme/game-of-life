@@ -80,7 +80,7 @@ void update(int width, int height, int universe[width][height]) {
         }
     for (int x = 0; x < width; x++)
         for (int y = 0; y < height; y++)
-        universe[x][y] = new[x][y];
+            universe[x][y] = new[x][y];
 
     g_generation++;
 }

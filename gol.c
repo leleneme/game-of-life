@@ -6,7 +6,6 @@
 #include <sys/select.h>
 #include <termios.h>
 #include <string.h>
-#include <png.h>
 
 static struct termios orig_termios;
 static int g_generation;

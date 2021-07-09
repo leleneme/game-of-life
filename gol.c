@@ -68,7 +68,7 @@ void display(int width, int height, int universe[width][height]) {
 void update(int width, int height, int universe[width][height]) {
     int new[height][width];
  
-	for (int x = 0; x < width; x++)
+    for (int x = 0; x < width; x++)
         for (int y = 0; y < height; y++) {
             int n = 0;
             for (int x1 = x - 1; x1 <= x + 1; x1++)
@@ -78,7 +78,7 @@ void update(int width, int height, int universe[width][height]) {
     
             if (universe[x][y]) n--;
             new[x][y] = (n == 3 || (n == 2 && universe[x][y]));
-    }
+        }
 	for (int x = 0; x < width; x++)
         for (int y = 0; y < height; y++)
             universe[x][y] = new[x][y];

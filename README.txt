@@ -1,1 +1,0 @@
-stupid ass trashy implementation of conway's game of life
